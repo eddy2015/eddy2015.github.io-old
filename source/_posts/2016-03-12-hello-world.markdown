@@ -6,4 +6,4 @@ comments: true
 categories: 
 - Octopress
 ---
-Hello world!
+Hello world!<!--more-->
