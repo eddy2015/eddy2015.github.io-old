@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://eddy2015.github.io//blog/2016/06/12/cocoscreator-plus-pomelo-chat-demo/</loc>
+<lastmod>2016-06-12T20:57:50+08:00</lastmod>
+</url>
+<url>
 <loc>http://eddy2015.github.io//blog/2016/03/12/hello-world/</loc>
 <lastmod>2016-03-12T09:37:57+08:00</lastmod>
 </url>
@@ -9,5 +13,11 @@
 </url>
 <url>
 <loc>http://eddy2015.github.io//</loc>
+</url>
+<url>
+<loc>http://eddy2015.github.io//blog/categories/cocoscreattor/</loc>
+</url>
+<url>
+<loc>http://eddy2015.github.io//blog/categories/pomelo/</loc>
 </url>
 </urlset>

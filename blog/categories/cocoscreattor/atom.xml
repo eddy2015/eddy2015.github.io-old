@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Eddy's Blog]]></title>
-  <link href="http://eddy2015.github.io//atom.xml" rel="self"/>
+  <title><![CDATA[Category: Cocoscreattor | Eddy's Blog]]></title>
+  <link href="http://eddy2015.github.io//blog/categories/cocoscreattor/atom.xml" rel="self"/>
   <link href="http://eddy2015.github.io//"/>
   <updated>2016-06-14T18:27:22+08:00</updated>
   <id>http://eddy2015.github.io//</id>
@@ -103,17 +103,14 @@ $ git clone https://github.com/eddy2015/ccc-pomelo-chat-client.git
 
 <p>CocosCreator 项目集成 pomelo 后，你会在 CocosCreator 编辑器中看到如下的红色错误信息：</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Simulator : mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
-</span><span class='line'>    at a: "Buffer.prototype.__proto__ = Uint8Array.prototype" (../../../../../../../Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/buffer/index.js:153)</span></code></pre></td></tr></table></div></figure>
-
+<pre><code>Simulator : mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+    at a: "Buffer.prototype.__proto__ = Uint8Array.prototype" (../../../../../../../Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/buffer/index.js:153)
+</code></pre>
 
 <p>或者在 web 上运行时，看到下列警告信息：</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create</span></code></pre></td></tr></table></div></figure>
-
+<pre><code>mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+</code></pre>
 
 <p>以上的警告信息并不影响 pomelo 的使用。由于本人水平有限，所以暂时没有解决该警告问题，如果各位有解决方法，请指出。</p>
 
@@ -138,15 +135,6 @@ $ git clone https://github.com/eddy2015/ccc-pomelo-chat-client.git
 <p>这是我博客的第一篇博文（除了 HelloWord 外^_^），希望大家喜欢。由于本人水平有限，文章中难免错漏之处，请各位不吝指正。</p>
 
 <p>本文出自 <a href="http://eddy2015.github.io/">Eddy&rsquo;s Blog</a> 转载请注明出处：<a href="http://eddy2015.github.io/blog/2016/06/12/cocoscreator-plus-pomelo-chat-demo/">http://eddy2015.github.io/blog/2016/06/12/cocoscreator-plus-pomelo-chat-demo/</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://eddy2015.github.io//blog/2016/03/12/hello-world/"/>
-    <updated>2016-03-12T09:37:57+08:00</updated>
-    <id>http://eddy2015.github.io//blog/2016/03/12/hello-world</id>
-    <content type="html"><![CDATA[<p>Hello world!</p>
 ]]></content>
   </entry>
   
