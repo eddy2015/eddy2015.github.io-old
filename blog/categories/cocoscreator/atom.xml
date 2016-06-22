@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cocoscreator | Eddy's Blog]]></title>
   <link href="http://eddy2015.github.io//blog/categories/cocoscreator/atom.xml" rel="self"/>
   <link href="http://eddy2015.github.io//"/>
-  <updated>2016-06-22T23:51:49+08:00</updated>
+  <updated>2016-06-22T23:53:34+08:00</updated>
   <id>http://eddy2015.github.io//</id>
   <author>
     <name><![CDATA[Eddy]]></name>
@@ -24,8 +24,7 @@
 
 <hr />
 
-<p>MacOS 10.10.3
-CocosCreator 1.1.1, AnySDK 2.1.2, AnySDK_Framework_JS_Android_2.1.2</p>
+<p>CocosCreator 1.1.1, AnySDK 2.1.2, AnySDK_Framework_JS_Android_2.1.2, MacOS 10.10.3</p>
 
 <h2>集成 AnySDK 详细步骤</h2>
 
