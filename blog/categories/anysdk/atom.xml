@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Cocoscreator | Eddy's Blog]]></title>
-  <link href="http://eddy2015.github.io//blog/categories/cocoscreator/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Anysdk | Eddy's Blog]]></title>
+  <link href="http://eddy2015.github.io//blog/categories/anysdk/atom.xml" rel="self"/>
   <link href="http://eddy2015.github.io//"/>
   <updated>2016-06-22T23:50:17+08:00</updated>
   <id>http://eddy2015.github.io//</id>
@@ -382,131 +382,6 @@ onExitBtnClicked: function () {
 <p>在 AnySDK 客户端配置好游戏的渠道、SDK等参数，然后使用上一步骤编译出来的 Android APK 母包生成集成了 SDK 的渠道包。</p>
 
 <p>在这里就不详细说明 AnySDK 客户端的使用了，详情请参考 <a href="http://docs.anysdk.com/PackageTool">AnySDK 的官方文档</a>。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[CocosCreator 集成 Pomelo 教程和一个多人聊天应用客户端实例]]></title>
-    <link href="http://eddy2015.github.io//blog/2016/06/12/cocoscreator-plus-pomelo-chat-demo/"/>
-    <updated>2016-06-12T20:57:50+08:00</updated>
-    <id>http://eddy2015.github.io//blog/2016/06/12/cocoscreator-plus-pomelo-chat-demo</id>
-    <content type="html"><![CDATA[<p>本文主要介绍怎么在 CocosCreator 中集成 Pomelo， 以及使用CocosCreattor + Pomelo 开发一个多人聊天应用。<!--more--></p>
-
-<p>使用 Pomelo 官方多人聊天 demo（下文统一称为 pomelo-chat-demo）的服务端代码作为本多人聊天应用的服务端，而本聊天应用客户端（下文统一称为 ccc-pomelo-chat-client）则是参考 pomelo-chat-demo 的web客户端使用CocosCreattor实现。</p>
-
-<h2>怎么运行ccc-pomelo-chat-client</h2>
-
-<hr />
-
-<h3>本人开发环境</h3>
-
-<p>CocosCreator 1.1, Pomelo 1.2.2, MacOS 10.10.3</p>
-
-<h3>安装 pomelo</h3>
-
-<p>参考 <a href="https://github.com/NetEase/pomelo/wiki/%E5%AE%89%E8%A3%85pomelo">安装 pomelo wiki</a> 安装 pomelo。</p>
-
-<h3>pomelo-chat-demo 源码下载与运行</h3>
-
-<p>ccc-pomelo-chat-client 服务端使用的是 pomelo-chat-demo 的服务端，并没有另外开发，这样可以很方便的展示多人聊天应用的多端（Web, Android, desktop等）聊天通讯功能。</p>
-
-<p>参考 <a href="https://github.com/NetEase/pomelo/wiki/chat%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85">pomelo chat 源码下载与安装 wiki</a> 下载 pomelo-chat-demo 源码。</p>
-
-<p>下载源码后，通过下列步骤来运行 pomelo-chat-demo。下文使用 <code>yourdir</code> 指代你本地 pomelo-chat-demo 源码的存放目录。</p>
-
-<p>打开终端，启动 pomelo-chat-demo 的聊天服务器。</p>
-
-<pre><code>$ cd yourdir/chatofpomelo-websocket/game-server 
-$ pomelo start
-</code></pre>
-
-<p>打开另外一个终端，启动 pomelo-chat-demo 的 web 服务器。</p>
-
-<pre><code>$ cd yourdir/chatofpomelo-websocket/web-server
-$ node app.js
-</code></pre>
-
-<p>如果启动过程中没有错误，那么我们就可以打开浏览器，输入 <a href="http://127.0.0.1:3001/index.html,">http://127.0.0.1:3001/index.html,</a> 然后就可以看到聊天应用的界面了。输入一个用户名和一个房间名，就可以开始聊天了。可以多开几个客户端实例（即打开多个网页），测试 pomelo-chat-demo 是否能正常地运行。效果图如下：</p>
-
-<p><a href="http://moefq.com/image/LBSlC"><img src="http://moefq.com/images/2016/06/14/608bb6bae1a9e922c398e81bc68b7877.md.png" alt="608bb6bae1a9e922c398e81bc68b7877.md.png" /></a></p>
-
-<p>那么怎么关闭 pomelo-chat-demo 的聊天服务器呢，其实很简单。打开另外一个终端</p>
-
-<pre><code>$ cd yourdir/chatofpomelo-websocket/game-server 
-$ pomelo stop 或 pomelo kill
-</code></pre>
-
-<p>注意：如果不是按以上步骤关闭聊天服务器，那么当你再次启动聊天服务器的时候，就有可能因为聊天服务器未完全关闭而出现错误。出现这种情况可以直接关闭启动聊天服务器的终端（这样聊天服务器就被完全关闭了），然后重新打一个终端启动聊天服务器。</p>
-
-<h3>ccc-pomelo-chat-client源码下载与运行</h3>
-
-<p>下文使用 <code>yourdir</code> 指代你本地 ccc-pomelo-chat-client 源码的存放目录。</p>
-
-<p>从GitHub上下载 <a href="https://github.com/eddy2015/ccc-pomelo-chat-client">ccc-pomelo-chat-client</a> 源码。</p>
-
-<pre><code>$ cd yourdir
-$ git clone https://github.com/eddy2015/ccc-pomelo-chat-client.git
-</code></pre>
-
-<p>使用 CocosCreator 打开 ccc-pomelo-chat-client 项目并运行预览（模拟器和浏览器都行），效果图如下：</p>
-
-<p><a href="http://moefq.com/image/LB4J9"><img src="http://moefq.com/images/2016/06/14/296eb2aa235dd05688bc94c8b18cae7c.md.png" alt="296eb2aa235dd05688bc94c8b18cae7c.md.png" /></a></p>
-
-<p>经本人测试，该客户端在web、Android、ccc模拟器都可以正常运行，其他平台请自行尝试。服务器 ip 地址默认为 127.0.0.1，如果你是在 Android 等其他不和服务器同一台机器平台运行，请把该 ip 修改成你启动服务器的电脑 ip 地址。端口默认为 3014，这个一般不需要修改，除非你改动了服务器端的代码。输入一个用户名和一个房间名（用户名和房间名限制了只能是字母、数字、或汉字），然后点击 join 按钮登陆后就可以进行一对多或者一对一聊天了。</p>
-
-<h2>CocosCreator 怎么集成 pomelo</h2>
-
-<hr />
-
-<h3>集成 pomelo 步骤</h3>
-
-<p>下载 <a href="https://github.com/eddy2015/ccc-pomelo-chat-client">ccc-pomelo-chat-client</a> 源码，把源码中的 <code>ccc-pomelo-chat-client/assets/pomelo</code> 拷贝到你的 CocosCreator 项目 assets 目录下，这样在你的项目中即可使用 pomelo-client 相关 API 了。</p>
-
-<p>API请阅读 <code>pomelo/pomelo-client.js</code> 源码，具体使用方法可以参考 <a href="https://github.com/eddy2015/ccc-pomelo-chat-client">ccc-pomelo-chat-client</a> 源码，或者参考以下网址：</p>
-
-<ol>
-<li><a href="https://github.com/NetEase/pomelo/wiki/Home-in-Chinese">pomelo 官方中文 wiki</a></li>
-<li><a href="https://github.com/NetEase/pomelo/wiki/chat%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85">pomelo-chat-demo 源码</a></li>
-<li><a href="https://github.com/NetEase/pomelo/wiki/pomelo%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%BC%80%E5%8F%91#web%E7%AB%AFapi%E7%AE%80%E4%BB%8B">pomelo 客服端开发</a></li>
-</ol>
-
-
-<h3>集成后的会出现的一些警告</h3>
-
-<p>CocosCreator 项目集成 pomelo 后，你会在 CocosCreator 编辑器中看到如下的红色错误信息：</p>
-
-<pre><code>Simulator : mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
-    at a: "Buffer.prototype.__proto__ = Uint8Array.prototype" (../../../../../../../Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/buffer/index.js:153)
-</code></pre>
-
-<p>或者在 web 上运行时，看到下列警告信息：</p>
-
-<pre><code>mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
-</code></pre>
-
-<p>以上的警告信息并不影响 pomelo 的使用。由于本人水平有限，所以暂时没有解决该警告问题，如果各位有解决方法，请指出。</p>
-
-<h3>该 CocosCreator pomelo 库由来</h3>
-
-<p>由于前一段时间对 pomelo 比较感兴趣，所有就去了解了一下。最近也一直在关注 CocosCreator，看到论坛有不少人问 CocosCreator 是否能集成pomelo。根据我个人的理解：CocosCreator 实现了 websocket 的跨平台封装；而 pomelo 也有基于 websocket 的客户端实例。因此，CocosCreator 集成 pomelo 应该不会有什么问题的。刚好端午节有空就尝试集成了一下，然后就有了这篇文章和 ccc-pomelo-chat-client。</p>
-
-<p>ccc-pomelo-chat-client 中的 pomelo 库生成过程：</p>
-
-<ol>
-<li>拷贝 <code>chatofpomelo-websocket/web-server/public/js/lib/components/component-emitter/index.js</code> 文件并修改文件名为 emitter.js，在 emitter.js 文件的 <code>module.exports = Emitter;</code> 代码后面添加 <code>window.EventEmitter = Emitter;</code> 代码。</li>
-<li>拷贝 <code>chatofpomelo-websocket/web-server/public/js/lib/components/NetEase-pomelo-protocol/lib/protocol.js</code> 文件。</li>
-<li>拷贝 <code>chatofpomelo-websocket/web-server/public/js/lib/components/pomelonode-pomelo-protobuf/lib/client/protobuf.js</code> 文件。</li>
-<li>拷贝 <code>chatofpomelo-websocket/web-server/public/js/lib/components/pomelonode-pomelo-jsclient-websocket/lib/pomelo-client.js</code> 文件，并使用 cc.log、 cc.error 替换文件中的 console.log、console.error。</li>
-</ol>
-
-
-<h2>最后</h2>
-
-<hr />
-
-<p>这是我博客的第一篇博文（除了 HelloWord 外^_^），希望大家喜欢。由于本人水平有限，文章中难免错漏之处，请各位不吝指正。</p>
-
-<p>本文出自 <a href="http://eddy2015.github.io/">Eddy&rsquo;s Blog</a> 转载请注明出处：<a href="http://eddy2015.github.io/blog/2016/06/12/cocoscreator-plus-pomelo-chat-demo/">http://eddy2015.github.io/blog/2016/06/12/cocoscreator-plus-pomelo-chat-demo/</a></p>
 ]]></content>
   </entry>
   
