@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Anysdk | Eddy's Blog]]></title>
   <link href="http://eddy2015.github.io//blog/categories/anysdk/atom.xml" rel="self"/>
   <link href="http://eddy2015.github.io//"/>
-  <updated>2016-06-22T23:55:46+08:00</updated>
+  <updated>2016-06-23T10:14:05+08:00</updated>
   <id>http://eddy2015.github.io//</id>
   <author>
     <name><![CDATA[Eddy]]></name>
@@ -166,7 +166,7 @@ if (jsb.fileUtils.isFileExist('jsb_anysdk.js') || jsb.fileUtils.isFileExist('jsb
 
 <h3>修改 Android.mk 文件</h3>
 
-<p>在 文件中添加 build/jsb-default/frameworks/runtime-src/proj.android/jni/Android.mk 文件中添加：</p>
+<p>在 build/jsb-default/frameworks/runtime-src/proj.android/jni/Android.mk 文件中添加：</p>
 
 <pre><code>$(call import-add-path,$(LOCAL_PATH)/../)
 </code></pre>
