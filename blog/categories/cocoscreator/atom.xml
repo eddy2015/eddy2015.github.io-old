@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cocoscreator | Eddy's Blog]]></title>
   <link href="http://eddy2015.github.io//blog/categories/cocoscreator/atom.xml" rel="self"/>
   <link href="http://eddy2015.github.io//"/>
-  <updated>2016-06-23T10:14:05+08:00</updated>
+  <updated>2016-06-23T10:15:45+08:00</updated>
   <id>http://eddy2015.github.io//</id>
   <author>
     <name><![CDATA[Eddy]]></name>
@@ -184,7 +184,7 @@ if (jsb.fileUtils.isFileExist('jsb_anysdk.js') || jsb.fileUtils.isFileExist('jsb
 </code></pre>
 
 <p>如下图，<strong>注意：记得在 <code>../../Classes/AppDelegate.cpp
-</code> 添加 “\”。</strong>
+</code> 后添加 “\”。</strong>
 <img src="http://moefq.com/images/2016/06/22/dbd9228816f437d2545a5ae9a4888fe0.png" alt="dbd9228816f437d2545a5ae9a4888fe0.png" /></p>
 
 <h3>修改 main.cpp 文件</h3>
