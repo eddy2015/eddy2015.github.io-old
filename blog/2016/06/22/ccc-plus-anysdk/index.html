@@ -206,10 +206,7 @@ if (jsb.fileUtils.isFileExist('jsb_anysdk.js') || jsb.fileUtils.isFileExist('jsb
 
 <h3>添加 Classes 文件</h3>
 
-<p>将 AnySDK_Framework_JS(Android)/3.10及以上/ 目录下所有文件，拷贝到 build/jsb-default/frameworks/runtime-src/Classes 目录下。</p>
-
-<p>由于 CocosCreator 1.1.1 版本的 jsb 和 1.0 版本的 jsb 有所区别，所以 <code>jsb_anysdk_protocols_auto.cpp</code> 文件需要进行相关的修改。由于改动的地方较多，在这就不一一列出了。请到下面的地址下载或复制：
-<a href="https://github.com/eddy2015/anysdk-files-for-ccc/blob/master/jsb_anysdk_protocols_auto.cpp">jsb_anysdk_protocols_auto.cpp</a> 文件，并替换原来的文件。</p>
+<p>由于 CocosCreator 1.1.1 使用的是 lite 版本引擎，所以不能使用 AnySDK_Framework_JS(Android)/3.10及以上/ 目录下的文件。请下载 <a href="https://github.com/eddy2015/anysdk-files-for-ccc">anysdk-files-for-ccc</a>，然后把 anysdk-files-for-ccc/build/jsb-default/frameworks/runtime-src/Classes/ 目录下的所有文件（除 AppDelegate.cpp 外），拷贝到 build/jsb-default/frameworks/runtime-src/Classes 目录下。</p>
 
 <h3>修改 AppDelegate.cpp 文件</h3>
 
