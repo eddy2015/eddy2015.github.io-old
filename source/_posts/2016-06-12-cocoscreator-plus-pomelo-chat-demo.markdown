@@ -3,7 +3,7 @@ layout: post
 title: "CocosCreator 集成 Pomelo 教程和一个多人聊天应用客户端实例"
 date: 2016-06-12 20:57:50 +0800
 comments: true
-categories: CocosCreattor Pomelo
+categories: Cocos-Creator Pomelo
 ---
 本文主要介绍怎么在 CocosCreator 中集成 Pomelo， 以及使用CocosCreattor + Pomelo 开发一个多人聊天应用。<!--more-->
 
