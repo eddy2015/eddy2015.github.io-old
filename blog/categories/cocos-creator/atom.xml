@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Cocoscreator | Eddy's Blog]]></title>
-  <link href="http://eddy2015.github.io//blog/categories/cocoscreator/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Cocos-creator | Eddy's Blog]]></title>
+  <link href="http://eddy2015.github.io//blog/categories/cocos-creator/atom.xml" rel="self"/>
   <link href="http://eddy2015.github.io//"/>
-  <updated>2016-06-27T12:12:50+08:00</updated>
+  <updated>2016-07-04T18:51:07+08:00</updated>
   <id>http://eddy2015.github.io//</id>
   <author>
     <name><![CDATA[Eddy]]></name>
