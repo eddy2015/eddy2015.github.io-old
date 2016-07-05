@@ -17,10 +17,10 @@ CocosCreator 1.1.1, AnySDK 2.1.2, AnySDK_Framework_JS_Android_2.1.2, MacOS 10.10
 
 ###获取 AnySDK Framework
 安装 AnySDK 客户端，然后在 AnySDK 客户端的【安妮市场】【分类】【框架】中找到 JS(Android) 框架并下载。如下图：
-![f25635beee3f69c5224a0db5da811e64.png](http://moefq.com/images/2016/06/22/f25635beee3f69c5224a0db5da811e64.png)
+![](http://o9sn2y8lr.bkt.clouddn.com/16-7-5/81864543.jpg)
 
 下载完成后打开 JS(Android) 框架文件夹即可看到 ``AnySDKFiles/Store/Frameworks/AnySDK_Framework_JS_Android_2.1.2/AnySDK_Framework_JS(Android)/`` 这样的目录。如下图：
-![c53ec646e60c26cea4b0a1b11a5e6457.png](http://moefq.com/images/2016/06/22/c53ec646e60c26cea4b0a1b11a5e6457.png)
+![](http://o9sn2y8lr.bkt.clouddn.com/16-7-5/14676565.jpg)
 
 下文统一使用 ``AnySDK_Framework_JS(Android)`` 指代 AnySDK Framework 文件目录。
 
@@ -72,7 +72,7 @@ CocosCreator 1.1.1, AnySDK 2.1.2, AnySDK_Framework_JS_Android_2.1.2, MacOS 10.10
 	}
 
 如下图，**注意：不要遗漏了添加代码前面分隔的逗号 “,”。**
-![1f49aec5017613daee5937b2b0459084.png](http://moefq.com/images/2016/06/22/1f49aec5017613daee5937b2b0459084.png)
+![](http://o9sn2y8lr.bkt.clouddn.com/16-7-5/13005876.jpg)
 
 ####修改 jsb.js 文件
 在 build/jsb-default/frameworks/cocos2d-x/cocos/scripting/js-bindings/script/jsb.js 文件中添加：
@@ -90,7 +90,7 @@ CocosCreator 1.1.1, AnySDK 2.1.2, AnySDK_Framework_JS_Android_2.1.2, MacOS 10.10
 	}
 	
 如下图
-![429e4831912ce5493a1d90614612d16f.png](http://moefq.com/images/2016/06/22/429e4831912ce5493a1d90614612d16f.png)
+![](http://o9sn2y8lr.bkt.clouddn.com/16-7-5/32945476.jpg)
 
 ###拷贝anysdk framework stl库
 ####添加 protocols 文件
@@ -131,7 +131,7 @@ CocosCreator 1.1.1, AnySDK 2.1.2, AnySDK_Framework_JS_Android_2.1.2, MacOS 10.10
 ```
 
 如下图
-![a34d1eef630b77357fd7b0da8a0eee8d.png](http://moefq.com/images/2016/06/22/a34d1eef630b77357fd7b0da8a0eee8d.png)
+![](http://o9sn2y8lr.bkt.clouddn.com/16-7-5/66057765.jpg)
 
 ###修改 Android.mk 文件
 在 build/jsb-default/frameworks/runtime-src/proj.android/jni/Android.mk 文件中添加：
@@ -157,7 +157,7 @@ $(call import-module, protocols/android)
 
 如下图，**注意：记得在 ``../../Classes/AppDelegate.cpp
 `` 后添加 “\”。**
-![dbd9228816f437d2545a5ae9a4888fe0.png](http://moefq.com/images/2016/06/22/dbd9228816f437d2545a5ae9a4888fe0.png)
+![](http://o9sn2y8lr.bkt.clouddn.com/16-7-5/32756607.jpg)
 
 ###修改 main.cpp 文件
 在 build/jsb-default/frameworks/runtime-src/proj.android/jni/hellojavascript/main.cpp 文件中添加：
@@ -177,7 +177,7 @@ PluginJniHelper::setJavaVM(vm);
 ```
 
 如下图
-![8cabdde9cc04010d4e2c4e298503dc38.png](http://moefq.com/images/2016/06/22/8cabdde9cc04010d4e2c4e298503dc38.png)
+![](http://o9sn2y8lr.bkt.clouddn.com/16-7-5/43516864.jpg)
 
 ###修改 AndroidManifest.xml 文件
 在 build/jsb-default/frameworks/runtime-src/proj.android/AndroidManifest.xml 文件中添加 AnySDK 所需要的权限：
@@ -193,7 +193,7 @@ PluginJniHelper::setJavaVM(vm);
 ```
 
 如下图
-![ff536e7787793ba702c09ae8cab9e0d8.png](http://moefq.com/images/2016/06/22/ff536e7787793ba702c09ae8cab9e0d8.png)
+![](http://o9sn2y8lr.bkt.clouddn.com/16-7-5/28805762.jpg)
 
 ###修改 AppActivity.java 文件
 在 build/jsb-default/frameworks/runtime-src/proj.android/src/org/cocos2dx/javascript/AppActivity.java 添加：
@@ -253,7 +253,7 @@ protected void onRestart() {
 ```
 
 如下图
-![751912d2799f9251349eacd49e049c4c.png](http://moefq.com/images/2016/06/22/751912d2799f9251349eacd49e049c4c.png)
+![](http://o9sn2y8lr.bkt.clouddn.com/16-7-5/47841800.jpg)
 
 ##在项目中使用AnySDK
 ---
