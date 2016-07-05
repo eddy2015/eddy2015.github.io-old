@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Pomelo | Eddy's Blog]]></title>
   <link href="http://eddy2015.github.io//blog/categories/pomelo/atom.xml" rel="self"/>
   <link href="http://eddy2015.github.io//"/>
-  <updated>2016-07-04T18:51:07+08:00</updated>
+  <updated>2016-07-05T15:12:29+08:00</updated>
   <id>http://eddy2015.github.io//</id>
   <author>
     <name><![CDATA[Eddy]]></name>
@@ -56,7 +56,7 @@ $ node app.js
 
 <p>如果启动过程中没有错误，那么我们就可以打开浏览器，输入 <a href="http://127.0.0.1:3001/index.html,">http://127.0.0.1:3001/index.html,</a> 然后就可以看到聊天应用的界面了。输入一个用户名和一个房间名，就可以开始聊天了。可以多开几个客户端实例（即打开多个网页），测试 pomelo-chat-demo 是否能正常地运行。效果图如下：</p>
 
-<p><a href="http://moefq.com/image/LBSlC"><img src="http://moefq.com/images/2016/06/14/608bb6bae1a9e922c398e81bc68b7877.md.png" alt="608bb6bae1a9e922c398e81bc68b7877.md.png" /></a></p>
+<p><img src="http://o9sn2y8lr.bkt.clouddn.com/16-7-5/88275169.jpg" alt="" /></p>
 
 <p>那么怎么关闭 pomelo-chat-demo 的聊天服务器呢，其实很简单。打开另外一个终端</p>
 
@@ -78,7 +78,7 @@ $ git clone https://github.com/eddy2015/ccc-pomelo-chat-client.git
 
 <p>使用 CocosCreator 打开 ccc-pomelo-chat-client 项目并运行预览（模拟器和浏览器都行），效果图如下：</p>
 
-<p><a href="http://moefq.com/image/LB4J9"><img src="http://moefq.com/images/2016/06/14/296eb2aa235dd05688bc94c8b18cae7c.md.png" alt="296eb2aa235dd05688bc94c8b18cae7c.md.png" /></a></p>
+<p><img src="http://o9sn2y8lr.bkt.clouddn.com/16-7-5/92132623.jpg" alt="" /></p>
 
 <p>经本人测试，该客户端在web、Android、ccc模拟器都可以正常运行，其他平台请自行尝试。服务器 ip 地址默认为 127.0.0.1，如果你是在 Android 等其他不和服务器同一台机器平台运行，请把该 ip 修改成你启动服务器的电脑 ip 地址。端口默认为 3014，这个一般不需要修改，除非你改动了服务器端的代码。输入一个用户名和一个房间名（用户名和房间名限制了只能是字母、数字、或汉字），然后点击 join 按钮登陆后就可以进行一对多或者一对一聊天了。</p>
 

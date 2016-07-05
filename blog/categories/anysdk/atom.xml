@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Anysdk | Eddy's Blog]]></title>
   <link href="http://eddy2015.github.io//blog/categories/anysdk/atom.xml" rel="self"/>
   <link href="http://eddy2015.github.io//"/>
-  <updated>2016-07-04T18:51:07+08:00</updated>
+  <updated>2016-07-05T15:12:29+08:00</updated>
   <id>http://eddy2015.github.io//</id>
   <author>
     <name><![CDATA[Eddy]]></name>
@@ -35,10 +35,10 @@
 <h3>获取 AnySDK Framework</h3>
 
 <p>安装 AnySDK 客户端，然后在 AnySDK 客户端的【安妮市场】【分类】【框架】中找到 JS(Android) 框架并下载。如下图：
-<img src="http://moefq.com/images/2016/06/22/f25635beee3f69c5224a0db5da811e64.png" alt="f25635beee3f69c5224a0db5da811e64.png" /></p>
+<img src="http://o9sn2y8lr.bkt.clouddn.com/16-7-5/81864543.jpg" alt="" /></p>
 
 <p>下载完成后打开 JS(Android) 框架文件夹即可看到 <code>AnySDKFiles/Store/Frameworks/AnySDK_Framework_JS_Android_2.1.2/AnySDK_Framework_JS(Android)/</code> 这样的目录。如下图：
-<img src="http://moefq.com/images/2016/06/22/c53ec646e60c26cea4b0a1b11a5e6457.png" alt="c53ec646e60c26cea4b0a1b11a5e6457.png" /></p>
+<img src="http://o9sn2y8lr.bkt.clouddn.com/16-7-5/14676565.jpg" alt="" /></p>
 
 <p>下文统一使用 <code>AnySDK_Framework_JS(Android)</code> 指代 AnySDK Framework 文件目录。</p>
 
@@ -96,7 +96,7 @@ build/jsb-default/frameworks/cocos2d-x/cocos/platform/android/java/gen/
 </code></pre>
 
 <p>如下图，<strong>注意：不要遗漏了添加代码前面分隔的逗号 “,”。</strong>
-<img src="http://moefq.com/images/2016/06/22/1f49aec5017613daee5937b2b0459084.png" alt="1f49aec5017613daee5937b2b0459084.png" /></p>
+<img src="http://o9sn2y8lr.bkt.clouddn.com/16-7-5/13005876.jpg" alt="" /></p>
 
 <h4>修改 jsb.js 文件</h4>
 
@@ -116,7 +116,7 @@ if (jsb.fileUtils.isFileExist('jsb_anysdk.js') || jsb.fileUtils.isFileExist('jsb
 </code></pre>
 
 <p>如下图
-<img src="http://moefq.com/images/2016/06/22/429e4831912ce5493a1d90614612d16f.png" alt="429e4831912ce5493a1d90614612d16f.png" /></p>
+<img src="http://o9sn2y8lr.bkt.clouddn.com/16-7-5/32945476.jpg" alt="" /></p>
 
 <h3>拷贝anysdk framework stl库</h3>
 
@@ -159,7 +159,7 @@ if (jsb.fileUtils.isFileExist('jsb_anysdk.js') || jsb.fileUtils.isFileExist('jsb
 </code></pre>
 
 <p>如下图
-<img src="http://moefq.com/images/2016/06/22/a34d1eef630b77357fd7b0da8a0eee8d.png" alt="a34d1eef630b77357fd7b0da8a0eee8d.png" /></p>
+<img src="http://o9sn2y8lr.bkt.clouddn.com/16-7-5/66057765.jpg" alt="" /></p>
 
 <h3>修改 Android.mk 文件</h3>
 
@@ -182,7 +182,7 @@ if (jsb.fileUtils.isFileExist('jsb_anysdk.js') || jsb.fileUtils.isFileExist('jsb
 
 <p>如下图，<strong>注意：记得在 <code>../../Classes/AppDelegate.cpp
 </code> 后添加 “\”。</strong>
-<img src="http://moefq.com/images/2016/06/22/dbd9228816f437d2545a5ae9a4888fe0.png" alt="dbd9228816f437d2545a5ae9a4888fe0.png" /></p>
+<img src="http://o9sn2y8lr.bkt.clouddn.com/16-7-5/32756607.jpg" alt="" /></p>
 
 <h3>修改 main.cpp 文件</h3>
 
@@ -200,7 +200,7 @@ PluginJniHelper::setJavaVM(vm);
 </code></pre>
 
 <p>如下图
-<img src="http://moefq.com/images/2016/06/22/8cabdde9cc04010d4e2c4e298503dc38.png" alt="8cabdde9cc04010d4e2c4e298503dc38.png" /></p>
+<img src="http://o9sn2y8lr.bkt.clouddn.com/16-7-5/43516864.jpg" alt="" /></p>
 
 <h3>修改 AndroidManifest.xml 文件</h3>
 
@@ -216,7 +216,7 @@ PluginJniHelper::setJavaVM(vm);
 </code></pre>
 
 <p>如下图
-<img src="http://moefq.com/images/2016/06/22/ff536e7787793ba702c09ae8cab9e0d8.png" alt="ff536e7787793ba702c09ae8cab9e0d8.png" /></p>
+<img src="http://o9sn2y8lr.bkt.clouddn.com/16-7-5/28805762.jpg" alt="" /></p>
 
 <h3>修改 AppActivity.java 文件</h3>
 
@@ -274,7 +274,7 @@ protected void onRestart() {
 </code></pre>
 
 <p>如下图
-<img src="http://moefq.com/images/2016/06/22/751912d2799f9251349eacd49e049c4c.png" alt="751912d2799f9251349eacd49e049c4c.png" /></p>
+<img src="http://o9sn2y8lr.bkt.clouddn.com/16-7-5/47841800.jpg" alt="" /></p>
 
 <h2>在项目中使用AnySDK</h2>
 
