@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cocos-creator | Eddy's Blog]]></title>
   <link href="http://eddy2015.github.io//blog/categories/cocos-creator/atom.xml" rel="self"/>
   <link href="http://eddy2015.github.io//"/>
-  <updated>2016-07-05T15:12:29+08:00</updated>
+  <updated>2016-07-06T09:16:58+08:00</updated>
   <id>http://eddy2015.github.io//</id>
   <author>
     <name><![CDATA[Eddy]]></name>
@@ -379,7 +379,7 @@ onExitBtnClicked: function () {
 
 <p>在这里就不详细说明 AnySDK 客户端的使用了，详情请参考 <a href="http://docs.anysdk.com/PackageTool">AnySDK 的官方文档</a>。</p>
 
-<h2>如果快速集成 AnySDK</h2>
+<h2>如何快速集成 AnySDK</h2>
 
 <hr />
 
