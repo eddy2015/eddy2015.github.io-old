@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cocos-creator | Eddy's Blog]]></title>
   <link href="http://eddy2015.github.io//blog/categories/cocos-creator/atom.xml" rel="self"/>
   <link href="http://eddy2015.github.io//"/>
-  <updated>2016-07-06T09:16:58+08:00</updated>
+  <updated>2016-08-24T13:31:10+06:00</updated>
   <id>http://eddy2015.github.io//</id>
   <author>
     <name><![CDATA[Eddy]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[CocosCreator 集成 AnySDK 教程]]></title>
     <link href="http://eddy2015.github.io//blog/2016/06/22/ccc-plus-anysdk/"/>
-    <updated>2016-06-22T08:39:30+08:00</updated>
+    <updated>2016-06-22T06:39:30+06:00</updated>
     <id>http://eddy2015.github.io//blog/2016/06/22/ccc-plus-anysdk</id>
     <content type="html"><![CDATA[<p>本文主要介绍怎么在 CocosCreator 项目中集成 AnySDK 。<!--more--></p>
 
@@ -391,14 +391,14 @@ onExitBtnClicked: function () {
 
 <p>本文主要讲解了如何在 CocosCreator 项目的 Android 平台集成 AnySDK ，并提供了一个快速集成方法。ios 平台请参考 AnySDK 的官方文档自行尝试。</p>
 
-<p>本文出自 <a href="http://eddy2015.github.io/">Eddy&rsquo;s Blog</a> 转载请注明出处：<a href="http://eddy2015.github.io/blog/2016/06/22/ccc-plus-anysdk/">http://eddy2015.github.io/blog/2016/06/22/ccc-plus-anysdk/</a></p>
+<p>本文出自 <a href="https://eddy2015.github.io/">Eddy&rsquo;s Blog</a> 转载请注明出处：<a href="https://eddy2015.github.io/blog/2016/06/22/ccc-plus-anysdk/">https://eddy2015.github.io/blog/2016/06/22/ccc-plus-anysdk/</a></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[CocosCreator 集成 Pomelo 教程和一个多人聊天应用客户端实例]]></title>
     <link href="http://eddy2015.github.io//blog/2016/06/12/cocoscreator-plus-pomelo-chat-demo/"/>
-    <updated>2016-06-12T20:57:50+08:00</updated>
+    <updated>2016-06-12T18:57:50+06:00</updated>
     <id>http://eddy2015.github.io//blog/2016/06/12/cocoscreator-plus-pomelo-chat-demo</id>
     <content type="html"><![CDATA[<p>本文主要介绍怎么在 CocosCreator 中集成 Pomelo， 以及使用CocosCreattor + Pomelo 开发一个多人聊天应用。<!--more--></p>
 
@@ -516,7 +516,7 @@ $ git clone https://github.com/eddy2015/ccc-pomelo-chat-client.git
 
 <p>这是我博客的第一篇博文（除了 HelloWord 外^_^），希望大家喜欢。由于本人水平有限，文章中难免错漏之处，请各位不吝指正。</p>
 
-<p>本文出自 <a href="http://eddy2015.github.io/">Eddy&rsquo;s Blog</a> 转载请注明出处：<a href="http://eddy2015.github.io/blog/2016/06/12/cocoscreator-plus-pomelo-chat-demo/">http://eddy2015.github.io/blog/2016/06/12/cocoscreator-plus-pomelo-chat-demo/</a></p>
+<p>本文出自 <a href="https://eddy2015.github.io/">Eddy&rsquo;s Blog</a> 转载请注明出处：<a href="https://eddy2015.github.io/blog/2016/06/12/cocoscreator-plus-pomelo-chat-demo/">https://eddy2015.github.io/blog/2016/06/12/cocoscreator-plus-pomelo-chat-demo/</a></p>
 ]]></content>
   </entry>
   
